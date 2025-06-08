@@ -1,0 +1,139 @@
+@charset 'UTF-8';
+/* 重設預設邊距與填充，讓網頁邊緣貼齊 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.page-header {
+    position: fixed;       
+    top: 0;               
+    left: 0;
+    width: 100%;           
+    display: flex;
+    background-color: #000000;
+    justify-content: space-around;
+    z-index: 1000;         
+}
+body {
+    padding-top: 80px;
+}
+
+.logo img{
+    width: 80px
+}
+.maon-nav{
+    background-color: #000000;
+    list-style-type: none;
+    display: flex;
+}
+.maon-nav li{
+    margin-right: 30px;
+}
+.maon-nav li a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 1.8rem;
+}
+.show{
+    background-color: #000000;
+    width: 100%;
+    padding: 10px;
+}
+.show img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.containt{
+    background-color: #05042c;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.t1{
+    background-color: #05042c;
+    color: #ffffff;
+    padding: 10px;
+    padding-left: 30px;
+    font-size: 30px;
+}
+.item{
+    background-color: rgb(0, 0, 0);
+    color: aliceblue;
+    margin: 20px;
+    width: 350px;
+}
+.item img{
+    width: 350px;
+    margin: auto;
+    display: block;
+}
+.item h5{
+    float: right;
+    padding-right: 10px;
+    color: #aaaaaa;
+}
+.item h4{
+    padding-left: 10px;
+    color: #d1be52;
+}
+.item p{
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+.mm{
+    background-color: #000000;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+.t2{
+    background-color: #000000;
+    color: #ffffff;
+    padding: 10px;
+    padding-left: 30px;
+    font-size: 30px;
+}
+.ku{
+    background-color: #000000;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 5px;
+    margin: 10px;
+    text-align: center;
+}
+.ku img{
+    width: 200px;
+}
+.w img{
+    width:100% ;
+}
+.mm img{
+    width: auto;
+}
+.f-image {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  width: 100px;
+  animation: floatUpDown 2s ease-in-out infinite;
+  cursor: pointer;
+  z-index: 9999;
+}
+@keyframes floatUpDown {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
